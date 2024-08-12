@@ -1,0 +1,6 @@
+name: HikariCPExample
+version: '${project.version}'
+main: cn.mcdd.hikaricpexample.HikariCPExample
+api-version: '1.20'
+authors: [dakuo]
+website: mcdd.cn

@@ -1,0 +1,25 @@
+database:
+  # 数据库ip
+  host: localhost
+  # 数据库端口
+  port: 3306
+  # 用户名
+  username: root
+  # 密码
+  password: 123456
+  # 数据库名
+  database: minecraft
+  # 连接池配置
+  hikaricp:
+    # 连接超时时长
+    connectionTimeout: 30000
+    # 一个连接在池里闲置多久时会被抛弃
+    idleTimeout: 600000
+    # 池中连接最长生命周期，当一个连接存活了足够久，HikariCP 将会在它空闲时把它抛弃
+    maxLifetime: 1800000
+    # 用来检查连接活性的 sql，要求是一个查询语句，常用select ‘x’
+    connectionTestQuery: 'SELECT 1'
+    # 池中维护的最小空闲连接数，池中至少要有多少空闲连接
+    minimumIdle: 10
+    # 池中最多容纳多少连接包括空闲的和在用的
+    maximumPoolSize: 30
